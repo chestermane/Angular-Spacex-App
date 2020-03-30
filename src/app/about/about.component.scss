@@ -1,0 +1,79 @@
+.container-fluid {
+}
+
+.mask {
+  opacity: 84%;
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+}
+
+.my-info {
+  min-width: 50vw;
+  min-height: 60vh;
+  margin: 120px auto;
+  border: 2px solid #caa5ff;
+}
+
+.my-avatar {
+  background-image: url("/assets/7c8a7c2c7c7722dddd131979a9d4c34f-sticker.png");
+  background-color: #000;
+  background-size: 12em;
+  border: 2px solid #caa5ff;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 590px;
+  top: 45px;
+}
+
+
+
+.links {
+  color: #caa5ff;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.fa.fa-arrow-circle-right {
+  font-size: 1.5rem;
+  color: #caa5ff;
+  padding-right: 5px;
+}
+.fa.fa-arrow-circle-left {
+  font-size: 1.5rem;
+  color: #caa5ff;
+  padding-left: 5px;
+}
+
+.heading {
+  color: #03cbb8;
+  width: 100vw;
+  margin-top: 3rem;
+  font-size: 49px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.subheading {
+}
+
+.formContainer {
+  width: 40vw;
+  margin: 0 auto;
+}
+.btnContainer {
+  //width: 100%;
+}
+
+.submitBtn {
+  color: #caa5ff;
+  border: 2px solid #caa5ff;
+  width: 140px;
+  margin: 0 auto;
+}
+
+.submitBtn:active {
+  background-color: #caa5ff;
+  color: #fff;
+}

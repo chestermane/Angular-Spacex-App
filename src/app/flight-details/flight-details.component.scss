@@ -1,0 +1,51 @@
+.container-fluid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  //bottom: 0;
+  top: 70px;
+  z-index: 99;
+  max-height: 500px;
+}
+
+.details {
+  border: 1px solid #caa5ff;
+  height: 450px;
+  width: 450px;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+}
+
+.details_side {
+  border: 1px solid #03e7d0;
+  height: 450px;
+  width: 450px;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+}
+
+.titlesContainer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titles {
+  color: #fff; 
+  padding-left: 50px;
+
+}
+
+.missionName {
+  text-align: center;
+}
+
+.flightDescription {
+  font-size: .8rem;
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

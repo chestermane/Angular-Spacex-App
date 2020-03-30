@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <nav class="navbar-dark navbar navbar-expand-sm">
+    <!-- Collapse button -->
+    <button class="navbar-toggler my-toggler " type="button"
+      data-toggle="collapse" data-target="#myNavbar"
+      aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle
+      navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <!-- Links -->
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard"
+            routerLinkActive="router-link-active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/allflights"
+            routerLinkActive="router-link-active">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about"
+            routerLinkActive="router-link-active">About</a>
+        </li>
+      </ul>
+
+    </div>
+    <span class="search-container float-right border rounded-pill bg-light">
+      <input (focus)="getLaunches()" class="search border-0"
+        (keyup)="missionSearch($event)" placeholder="search..." />
+      <i class="fa fa-search mr-3 my-2"></i>
+    </span>
+    <ul value="" class="autoSearch">
+      <li (click)=clickToLaunch(match.flight_number) name="autocomplete"
+        id="autocomplete" class="autoSearchDrop"
+        *ngFor="let match of autocompleteMatches">{{match.mission_name}}</li>
+    </ul>
+  </nav>
+</div>

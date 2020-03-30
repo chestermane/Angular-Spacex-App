@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row" style="width: 100%;">
+  <span class="titlesContainer">
+    <h3 class="titles ml-3">Flight Details</h3>
+    <h3 class="titles">Watch the Launch</h3>
+    <h3 class="titles mr-4">Stats for Nerds</h3>
+  </span>
+  </div>
+  <div class="row justify-content-center">
+  
+    
+    <div class="col-2 details_side">
+     <h5 class="missionName">Mission Name {{flightDetails?.mission_name}}</h5>
+     <h5 class="missionName">{{launchDate}}</h5>
+     <p class="flightDescription">{{flightDetails?.details}}</p>
+    </div>
+    <div class="col-6 details">
+
+      <iframe width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+        class="youtubeplayer" [src]="safeURL | SanitizePipe">
+      </iframe>
+    </div>
+    <div class="col-2 details_side">jfkljdfasjfkalsfjaklsjfakls;</div>
+  </div>
+</div>

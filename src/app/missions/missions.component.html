@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row title justify-content-center">
+    Welcome to the unoffical SpaceX App
+  </div>
+  <div class="row subtitle justify-content-center title">
+    Recent Flights
+  </div>
+  <div class="col-10 offset-1">
+    <div class="row justify-content-center" >
+      <i [ngClass]="{'disabled': offset === 0}" (click)="getRecentFlights(-2)" class="arrow left-arrow fa fa-arrow-left fa-5x"></i>
+
+      <div class="card" *ngFor="let launch of recentLaunches">
+        <img
+          class="card-img-top"
+          src="{{ launch.links.flickr_images[0] }}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ launch.mission_name }}</h5>
+          <p class="card-text">
+            {{ launch.details }}
+          </p>
+          <a routerLink="/flight/{{launch.flight_number}}"  routerLinkActive="router-link-active"  class="btn btn-primary">Flight Details</a>
+        </div>
+      </div>
+
+      <i (click)="getRecentFlights(2)" class="arrow right-arrow fa fa-arrow-right fa-5x"></i>
+    </div>
+    <div  class="row justify-content-center">
+      <a
+        class="more-flights"
+        routerLink="/allflights"
+        routerLinkActive="router-link-active"
+        >More Flights</a
+      >
+    </div>
+  </div>
+</div>

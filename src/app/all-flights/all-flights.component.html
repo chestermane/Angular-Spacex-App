@@ -1,0 +1,20 @@
+<div class="container-fluid mask">
+  <div class="row">
+    <div class="col-4" *ngFor="let launch of allLaunches">
+      <div class="card mt-5">
+        <img
+          class="card-img-top"
+          src="{{ launch.links.flickr_images[0] }}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ launch.mission_name }}</h5>
+          <p class="card-text">
+            {{ launch.details }}
+          </p>
+          <a href="#" class="btn btn-primary">Flight Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
